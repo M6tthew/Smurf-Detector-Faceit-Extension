@@ -1,0 +1,22 @@
+{
+  "name": "FACEIT Smurf Detector",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["*://*.faceit.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "bucket_1.png",
+        "bucket_2.png",
+        "bucket_3.png",
+        "bucket_4.png"
+      ],
+      "matches": ["*://*.faceit.com/*"]
+    }
+  ]
+}
